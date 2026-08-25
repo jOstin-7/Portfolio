@@ -1,0 +1,45 @@
+@import "tailwindcss";
+html.light-mode {
+  @apply bg-black /*background color*/
+  text-white /*text color*/
+  ease-in-out duration-400 /*transition*/;
+}
+/* SUN */
+.sun-set {
+  @apply top-full left-1/2;
+}
+
+/* MOON */
+.moon-rise {
+  @apply top-1/4 left-1/4;
+}
+
+/* Animation */
+.sun,
+.moon {
+  @apply ease-in-out duration-400;
+}/*
+@media (prefers-color-scheme: dark) {
+  html {
+    @apply bg-black /
+    text-white;
+  }
+  html.light-mode {
+  @apply bg-white
+  ease-in-out duration-400 ;
+  
+}
+.sun-set{
+  @apply 
+  top-1/4
+  left-1/4/
+  ease-in-out duration-400
+}
+.moon-rise{
+  @apply 
+  top-full
+  left-1/2
+  ease-in-out duration-400
+}
+}
+*/
