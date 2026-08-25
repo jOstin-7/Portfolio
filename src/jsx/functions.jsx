@@ -1,4 +1,6 @@
+import { useState, useEffect } from "react";
 
+export function useActiveSection() {
   const [activeSection, setActiveSection] = useState("about");
 
   useEffect(() => {
@@ -23,3 +25,6 @@
       sections.forEach((section) => observer.unobserve(section));
     };
   }, []);
+
+  return activeSection;
+}

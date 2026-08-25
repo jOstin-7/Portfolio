@@ -32,6 +32,7 @@ html {
   @apply h-3/4 w-1/4
   relative /*position*/
   text-center /*text alignment*/
+  justify-center
   p-1.5/*padding*/
   m-auto mx-0.5
   rounded-4xl /*border radius*/
