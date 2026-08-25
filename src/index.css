@@ -4,7 +4,7 @@ html {
 }
 /*Header*/
 .header {
-  @apply h-1/10 w-dvw
+  @apply h-1/11 w-dvw
   fixed
   top-5 /*position*/
   flex;
@@ -24,7 +24,7 @@ html {
   rounded-4xl /*border radius*/
   shadow-2xl /*shadow*/
   flex /*display*/
-  justify-center
+  items-center
   px-2
 }
 
@@ -32,13 +32,14 @@ html {
   @apply h-3/4 w-1/4
   relative /*position*/
   text-center /*text alignment*/
+  flex
   justify-center
-  p-1.5/*padding*/
+  items-center
   m-auto mx-0.5
   rounded-4xl /*border radius*/
 }
 .button:hover {
-  @apply bg-blue-200;
+  @apply text-blue-200;
 }
 
  .button.active {
