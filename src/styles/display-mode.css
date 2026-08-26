@@ -11,6 +11,7 @@ html.light-mode {
     absolute
     left-1/4 top-1/4
     text-amber-200
+    fill-amber-200
     ease-in-out
     duration-400;
 }
@@ -21,6 +22,7 @@ html.light-mode {
   h-1/2 w-1/2
   left-5/4 top-5/4
     absolute
+    fill-gray-400
     text-gray-400
     ease-in-out
     duration-400;
