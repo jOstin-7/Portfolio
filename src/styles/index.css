@@ -7,42 +7,10 @@ html {
   text-black
   ease-in-out duration-400 /*transition*/;
 }
-
-
-
-
 /*Main Content*/
 .partitions {
   @apply h-dvh w-dvw /*background color*/;
 }
 :root {
     font-family: 'Open Sans', sans-serif;
-    /* resizing for mobile devices */
-  /*
-  @apply text-xl;
-  @media (max-width: 1024px) {
-    font-size: 0.8rem;
-
-    .header {
-      @apply h-1/12 w-dvw;
-    }
-    .button {
-      @apply p-3;
-    }
-  }
-
-  @media (max-width: 720px) {
-    font-size: 0.8rem;
-    .header {
-      @apply h-1/16 w-dvw;
-    }
-    .navbar {
-      @apply h-full w-3/4;
-    }
-
-    .button {
-      @apply p-4;
-    }
-  }
-    */
 }

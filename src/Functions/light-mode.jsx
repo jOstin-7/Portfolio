@@ -6,8 +6,6 @@ function useLightMode() {
   const toggleMode = () => {
     setIsLightMode((prev) => !prev);
     document.documentElement.classList.toggle("light-mode");
-    document.documentElement.classList.toggle("sun-set");
-    document.documentElement.classList.toggle("moon-rise");
   };
 
   return { isLightMode, toggleMode };
