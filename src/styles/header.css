@@ -1,19 +1,19 @@
 @import "tailwindcss";
 /*Header*/
 .header {
-  @apply h-1/14 w-dvw
+  @apply h-10 w-dvw
   fixed
-  top-5 /*position*/
+  top-3 /*position*/
   flex;
 }
 /*Name*/
 .name {
-  @apply h-full w-max 
+  @apply 
   flex 
   absolute
   text-center 
   font-bold 
-  text-2xl 
+  text-3xl 
   left-10 
 }
 
@@ -27,6 +27,7 @@
   flex 
   items-center
   px-2
+  font-bold
   text-white;
   background-color: #02187b
 }
@@ -51,7 +52,7 @@
 
 /* LIGHT MODE BUTTON */
 .button-mode {
-  @apply h-full w-10
+  @apply h-10 w-10
     absolute
     flex
     rounded-4xl
@@ -70,5 +71,6 @@
 
 /* MOON - starts below the button */
 .moon {
-  @apply left-1/4 top-1/4;
+  @apply left-1/4 top-1/4
+  text-sm;
 }

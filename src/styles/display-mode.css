@@ -1,11 +1,9 @@
 @import "tailwindcss";
-html.light-mode {
+:root.light-mode {
   @apply bg-gray-800 /*background color*/
-  text-white /*text color*/
-  ease-in-out duration-400 /*transition*/;
+  text-white /*text color*/;
 }
 /* Header Changes */
-/* SUN MOVES OUT */
 .sun-set {
   @apply  h-1/2 w-1/2
     absolute
@@ -16,7 +14,6 @@ html.light-mode {
     duration-400;
 }
 
-/* MOON MOVES IN */
 .moon-rise {
   @apply 
   h-1/2 w-1/2
@@ -28,19 +25,20 @@ html.light-mode {
     duration-400;
 }
 
-/* Animation */
 
 
 /*
+
 @media (prefers-color-scheme: dark) {
-  html {
-    @apply bg-black /
+  :root {
+    @apply bg-black 
     text-white;
   }
   html.light-mode {
   @apply bg-white
   ease-in-out duration-400 ;
   
+}
 }
 .sun-set{
   @apply 

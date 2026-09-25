@@ -6,11 +6,10 @@ import { Moon } from 'lucide-react';
 
 /*functions */
 import { useActiveSection } from "./Functions/highlight.jsx";
-import useLightMode from "./Functions/light-mode.jsx";
 
-function PageHeader() {
+function PageHeader({ isLightMode, toggleMode }) {
   const activeSection = useActiveSection();
-  const { isLightMode, toggleMode } = useLightMode();
+
     return (
         <>
          {/* Header  */}

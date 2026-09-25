@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.footer {
+  @apply h-full w-full max-w-full
+  p-6
+  border-t-1;
+}
+
+.name-text {
+  @apply w-full sm:w-1/4
+  m-10 bottom-30;
+}
+.foot-name {
+  @apply flex 
+  relative
+  text-center 
+  font-bold 
+  text-xl
+  bottom-2;
+}
+.cprt-build {
+  @apply border-t-1
+    text-sm
+    flex
+    flex-wrap
+    justify-between
+    gap-2 
+    w-full max-w-full
+    ;
+}

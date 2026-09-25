@@ -1,13 +1,22 @@
+import "./styles/index.css";
+import PageHeader from "./PageHeader.jsx";
+import Pagefooter from "./Pagefooter.jsx";
+/*functions */
+import useLightMode from "./Functions/light-mode.jsx";
+  
 
-import './styles/index.css'
-import PageHeader from './PageHeader.jsx';
 function App() {
+
+  const { isLightMode, toggleMode } = useLightMode();
+
   return (
     <>
-    {/*  */}
-    {/* Page Header */}
-    <PageHeader />
-    {/* partitions */}  
+      {/*  */}
+      {/* Page Header */}
+      <PageHeader 
+        isLightMode={isLightMode}
+        toggleMode={toggleMode}/>
+      {/* partitions */}
       <div className="partitions" id="home">
         home
       </div>
@@ -23,7 +32,9 @@ function App() {
       <div className="partitions" id="contact">
         contact
       </div>
-      <div className="footer"></div>
+      {/* Page Footer*/}
+      <Pagefooter isLightMode={isLightMode}/>
+      
     </>
   );
 }

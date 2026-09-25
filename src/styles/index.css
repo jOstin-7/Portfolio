@@ -1,16 +1,17 @@
 @import "tailwindcss";
 @import "../font/fonts.css";
-html {
+:root {
   @apply h-dvh w-dvw 
-  scroll-smooth
   bg-white /*background color*/
-  text-black
-  ease-in-out duration-400 /*transition*/;
+  text-black;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden
+}
+html{
+ @apply
+  scroll-smooth ease-in-out duration-400
 }
 /*Main Content*/
 .partitions {
   @apply h-dvh w-dvw /*background color*/;
-}
-:root {
-    font-family: 'Open Sans', sans-serif;
 }
