@@ -5,7 +5,6 @@ import Pagefooter from "./Pagefooter.jsx";
 /*functions */
 import useLightMode from "./Functions/light-mode.jsx";
   
-import modal from "./modal.jsx";
 
 function App() {
 
@@ -30,6 +29,12 @@ function App() {
       </div>
       <div className="partitions" id="services">
         services
+      </div>
+      <div className="partitions" id="Projects">
+        Projects
+      </div>
+      <div className="partitions" id="Certificates">
+        certificates
       </div>
       <modal />
       <Contact isLightMode={isLightMode}/>

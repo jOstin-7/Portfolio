@@ -27,8 +27,11 @@ function PageHeader({ isLightMode, toggleMode }) {
           <a href="#services" className={`button ${activeSection === "services" ? "active" : ""}`}>
             <button>Services</button>
           </a>
-          <a href="#contact" className={`button ${activeSection === "contact" ? "active" : ""}`}>
-            <button >Contact</button>
+          <a href="#Projects" className={`button ${activeSection === "Projects" ? "active" : ""}`}>
+            <button >Projects</button>
+          </a>
+          <a href="#Certificates" className={`button ${activeSection === "Certificates" ? "active" : ""}`}>
+            <button >Certificates</button>
           </a>
           
         </div>

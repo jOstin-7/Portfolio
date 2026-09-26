@@ -44,6 +44,16 @@
   bg-[#28304b];
   ;
 }
+.modal_body_dark{
+    @apply
+    relative w-full
+    rounded-xl 
+    bg-blue-950
+    shadow-xl 
+    outline-none
+    duration-200
+    ease-in-out 
+}
 
 /*
 
