@@ -1,7 +1,8 @@
 @import "tailwindcss";
 :root.light-mode {
   @apply bg-gray-800 /*background color*/
-  text-white /*text color*/;
+  text-white /*text color*/
+  ease-in-out duration-400;
 }
 /* .a{
   @apply

@@ -3,8 +3,9 @@
 .header {
   @apply h-10 w-dvw
   fixed
-  top-3 /*position*/
-  flex;
+  z-20 /*position*/
+  flex
+  mt-2.5;
 }
 /*Name*/
 .name {

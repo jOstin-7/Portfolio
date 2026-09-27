@@ -2,6 +2,8 @@ import "./styles/index.css";
 import PageHeader from "./PageHeader.jsx";
 import Contact from "./Contact.jsx";
 import Pagefooter from "./Pagefooter.jsx";
+import Home from "./Home.jsx";
+import About from "./About.jsx";
 /*functions */
 import useLightMode from "./Functions/light-mode.jsx";
   
@@ -18,12 +20,8 @@ function App() {
         isLightMode={isLightMode}
         toggleMode={toggleMode}/>
       {/* partitions */}
-      <div className="partitions" id="home">
-        home
-      </div>
-      <div className="partitions" id="about">
-        about
-      </div>
+      <Home  isLightMode={isLightMode}/>
+      <About isLightMode={isLightMode}/>
       <div className="partitions" id="skills">
         skills
       </div>
