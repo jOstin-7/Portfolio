@@ -1,118 +1,69 @@
-@import "tailwindcss";
-/*Footer based*/
+@reference "tailwindcss";
 .footer {
-  @apply h-full w-full max-w-full
-  p-6
-  flex flex
-  justify-between
-  border-1;
+  @apply w-full max-w-full p-4 sm:p-6 flex flex-col md:flex-row justify-between border-1;
 }
-.leftside {
-  @apply flex flex-col sm:flex-row;
-}
+.leftside,
 .rightside {
   @apply flex flex-col sm:flex-row;
 }
 .name-text {
-  @apply w-full sm:w-1/2
-  m-5;
+  @apply w-full sm:w-1/2 m-5;
 }
 .foot-name {
-  @apply flex 
-  relative
-  text-center 
-  font-bold 
-  text-xl
-  bottom-2;
+  @apply flex relative text-center font-bold text-xl bottom-2;
 }
-
 .socialslinks {
-  @apply flex gap-2
-  mt-20;
+  @apply flex flex-wrap gap-2 mt-6 sm:mt-20;
+}
+.facebook,
+.git,
+.linkedin,
+.discord {
+  @apply h-12 w-12 sm:h-10 sm:w-10 bg-no-repeat bg-center bg-contain;
 }
 .facebook {
-  @apply h-15 w-15 sm:h-10 sm:w-10
-  bg-no-repeat
-  bg-center
-  bg-contain
-   bg-[url("https://img.icons8.com/?size=100&id=118467&format=png&color=162456")]
-  ;
+  background-image: url("https://img.icons8.com/?size=100&id=118467&format=png&color=162456");
 }
-.git{
-  @apply h-15 w-15 sm:h-10 sm:w-10
-  bg-no-repeat
-  bg-center
-  bg-contain
-   bg-[url("https://img.icons8.com/?size=100&id=12599&format=png&color=162456")]
-  ;
+.git {
+  background-image: url("https://img.icons8.com/?size=100&id=12599&format=png&color=162456");
 }
 .linkedin {
-  @apply h-15 w-15 sm:h-10 sm:w-10
-  bg-no-repeat
-  bg-center
-  bg-contain
-   bg-[url("https://img.icons8.com/?size=100&id=8808&format=png&color=162456")]
-  ;
+  background-image: url("https://img.icons8.com/?size=100&id=8808&format=png&color=162456");
 }
-
 .discord {
-  @apply h-15 w-15 sm:h-10 sm:w-10
-  bg-no-repeat
-  bg-center
-  bg-contain
-   bg-[url("https://img.icons8.com/?size=100&id=30888&format=png&color=162456")]
-  ;
+  background-image: url("https://img.icons8.com/?size=100&id=30888&format=png&color=162456");
 }
-
-/*Navigate*/
-.navigate {
-  @apply w-full 
-  m-5 
-  mr-15
-  ml-10 
-  sm:mr-5
-  ;
-}
-.navhead {
-  @apply text-lg font-semibold;
-}
-.navlinks {
-  @apply flex flex-col gap-2;
-}
-/*Contact Information*/
+.navigate,
 .contact-info {
-  @apply w-full 
-  m-5
-  mr-15
-  ml-10;
+  @apply w-full my-5 mx-5 sm:ml-10 sm:mr-5;
 }
+.navhead,
 .contact-head {
   @apply text-lg font-semibold;
 }
+.navlinks,
 .contact-links {
-  @apply flex flex-col gap-2;
+  @apply 
+  flex flex-col 
+  gap-2;
 }
-
-
-
-/*copyright and build with*/
+.contact-links {
+  @apply 
+  break-words;
+}
 .cprt-build {
-  @apply border-t-1
-    text-sm
-    flex
-    flex-wrap 
-    justify-between
-    gap-2 
-    w-full max-w-full
-    ;
+  @apply 
+  border-t-1 
+  text-sm flex flex-wrap 
+  justify-between 
+  gap-2 w-full 
+  max-w-full;
 }
 .rights {
   @apply 
-    pl-2
-    ;
+  pl-2;
 }
 .build {
   @apply 
-    pr-4
-    ;
+  pr-4;
 }

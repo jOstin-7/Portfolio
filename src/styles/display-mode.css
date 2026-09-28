@@ -1,85 +1,32 @@
-@import "tailwindcss";
+@reference "tailwindcss";
 :root.light-mode {
-  @apply bg-gray-800 /*background color*/
-  text-white /*text color*/
-  ease-in-out duration-400;
+  @apply bg-gray-800 
+  text-white 
+  ease-in-out 
+  duration-400;
 }
-/* .a{
-  @apply
-  text-white
-  ease-in-out duration-400;
-}*/
-/* Header Changes */
 .sun-set {
-  @apply  h-1/2 w-1/2
-    absolute
-    left-1/4 top-1/4
-    text-amber-200
-    fill-amber-200
-    ease-in-out
-    duration-400;
-}
-
-.moon-rise {
-  @apply 
-  h-1/2 w-1/2
-  left-5/4 top-5/4
-    absolute
-    fill-gray-400
-    text-gray-400
-    ease-in-out
-    duration-400;
-}
-
-/*contact  banner container */
-.contact-container-dark{
-  @apply 
-  w-96/100 h-full
-  flex 
-  m-auto
-  mb-5
-  justify-center
-  items-center
-  rounded-xl
-  shadow-xl shadow-black/20
-  bg-[#28304b];
-  ;
-}
-.modal_body_dark{
-    @apply
-    relative w-full
-    rounded-xl 
-    bg-blue-950
-    shadow-xl 
-    outline-none
-    duration-200
+  @apply h-1/2 w-1/2 
+   absolute 
+   left-1/4 top-1/4
+    text-amber-200 
+    fill-amber-200 
     ease-in-out 
+    duration-400;
 }
-
-/*
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    @apply bg-black 
-    text-white;
-  }
-  html.light-mode {
-  @apply bg-white
-  ease-in-out duration-400 ;
-  
+.moon-rise {
+  @apply h-1/2 w-1/2 
+  absolute 
+  left-5/4 top-5/4 
+  fill-gray-400 
+  text-gray-400 
+  ease-in-out 
+  duration-400;
 }
+/* Dark variants only override CSS variables; layout lives in the base classes */
+.contact-container-dark {
+  --contact-bg: #28304b;
 }
-.sun-set{
-  @apply 
-  top-1/4
-  left-1/4/
-  ease-in-out duration-400
+.modal_body_dark {
+  --modal-bg: #172554;
 }
-.moon-rise{
-  @apply 
-  top-full
-  left-1/2
-  ease-in-out duration-400
-}
-}
-*/
