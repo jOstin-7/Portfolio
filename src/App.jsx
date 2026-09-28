@@ -4,6 +4,7 @@ import Contact from "./Contact.jsx";
 import Pagefooter from "./Pagefooter.jsx";
 import Home from "./Home.jsx";
 import About from "./About.jsx";
+import Skills from "./skill.jsx";
 
 /*functions */
 import useLightMode from "./Functions/light-mode.jsx";
@@ -18,9 +19,7 @@ function App() {
       {/* partitions */}
       <Home isLightMode={isLightMode} />
       <About isLightMode={isLightMode} />
-      <div className="partitions" id="skills">
-        skills
-      </div>
+      <Skills isLightMode={isLightMode}  className="bg-black w-screen h-screen"/>
       <div className="partitions" id="services">
         services
       </div>

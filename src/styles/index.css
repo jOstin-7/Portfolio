@@ -29,12 +29,35 @@ a {
   shadow-md
   shadow-black/50;
 }
+
+.main_container {
+  @apply 
+  h-full w-full;
+}
 .page_title {
   @apply 
   absolute 
-  m-4 md:m-10 
+  m-4 md:m-12 
   text-blue-500 text-xl;
 }
+.content_container{
+  @apply 
+  h-full w-full 
+  justify-center 
+  items-center 
+  p-6 pt-16 md:p-20;
+}
+.content_header{
+  @apply 
+  w-full md:w-1/2 
+  md:ml-5 
+  p-3 pl-0 
+  text-4xl 
+  md:text-6xl 
+  font-bold border-b-4 
+  border-blue-500;
+}
+
 @media (prefers-reduced-motion: reduce) {F
   html {
     scroll-behavior: auto;
