@@ -5,7 +5,7 @@
   p-6
   flex flex
   justify-between
-  border-t-1;
+  border-1;
 }
 .leftside {
   @apply flex flex-col sm:flex-row;
