@@ -1,9 +1,11 @@
 import "./styles/index.css";
 import PageHeader from "./PageHeader.jsx";
+import Contact from "./Contact.jsx";
 import Pagefooter from "./Pagefooter.jsx";
 /*functions */
 import useLightMode from "./Functions/light-mode.jsx";
   
+import modal from "./modal.jsx";
 
 function App() {
 
@@ -29,9 +31,8 @@ function App() {
       <div className="partitions" id="services">
         services
       </div>
-      <div className="partitions" id="contact">
-        contact
-      </div>
+      <modal />
+      <Contact isLightMode={isLightMode}/>
       {/* Page Footer*/}
       <Pagefooter isLightMode={isLightMode}/>
       

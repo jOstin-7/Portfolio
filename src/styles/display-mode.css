@@ -3,6 +3,11 @@
   @apply bg-gray-800 /*background color*/
   text-white /*text color*/;
 }
+/* .a{
+  @apply
+  text-white
+  ease-in-out duration-400;
+}*/
 /* Header Changes */
 .sun-set {
   @apply  h-1/2 w-1/2
@@ -25,7 +30,20 @@
     duration-400;
 }
 
-
+/*contact  banner container */
+.contact-container-dark{
+  @apply 
+  w-96/100 h-full
+  flex 
+  m-auto
+  mb-5
+  justify-center
+  items-center
+  rounded-xl
+  shadow-xl shadow-black/20
+  bg-[#28304b];
+  ;
+}
 
 /*
 
