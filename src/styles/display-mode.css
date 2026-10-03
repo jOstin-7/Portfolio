@@ -2,8 +2,7 @@
 :root.light-mode {
   @apply bg-gray-800 
   text-white 
-  ease-in-out 
-  duration-400;
+  transition-[background-color,color] ease-in-out duration-400;
 }
 .sun-set {
   @apply h-1/2 w-1/2 
@@ -11,8 +10,7 @@
    left-1/4 top-1/4
     text-amber-200 
     fill-amber-200 
-    ease-in-out 
-    duration-400;
+    transition-[left,top,color,fill] ease-in-out duration-400;
 }
 .moon-rise {
   @apply h-1/2 w-1/2 
@@ -20,8 +18,7 @@
   left-5/4 top-5/4 
   fill-gray-400 
   text-gray-400 
-  ease-in-out 
-  duration-400;
+  transition-[left,top,color,fill] ease-in-out duration-400;
 }
 /* Dark variants only override CSS variables; layout lives in the base classes */
 .contact-container-dark {

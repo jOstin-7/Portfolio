@@ -1,19 +1,19 @@
 @reference "tailwindcss";
 .footer {
-  @apply w-full max-w-full p-4 sm:p-6 flex flex-col md:flex-row justify-between border-1;
+  @apply w-full max-w-full p-4 sm:p-6 flex flex-col md:flex-row justify-between border-t-1;
 }
 .leftside,
 .rightside {
-  @apply flex flex-col sm:flex-row;
+  @apply flex flex-col sm:flex-row md:w-fit;
 }
 .name-text {
-  @apply w-full sm:w-1/2 m-5;
+  @apply w-full sm:w-auto m-3 sm:m-5;
 }
 .foot-name {
   @apply flex relative text-center font-bold text-xl bottom-2;
 }
 .socialslinks {
-  @apply flex flex-wrap gap-2 mt-6 sm:mt-20;
+  @apply flex flex-wrap gap-2 mt-6 sm:mt-10 md:mt-20;
 }
 .facebook,
 .git,
@@ -21,21 +21,12 @@
 .discord {
   @apply h-12 w-12 sm:h-10 sm:w-10 bg-no-repeat bg-center bg-contain;
 }
-.facebook {
-  background-image: url("https://img.icons8.com/?size=100&id=118467&format=png&color=162456");
+.navigate{
+  @apply w-1/4  my-3  mx-3  md:ml-6 lg:ml-10 lg:mr-10 ;
 }
-.git {
-  background-image: url("https://img.icons8.com/?size=100&id=12599&format=png&color=162456");
-}
-.linkedin {
-  background-image: url("https://img.icons8.com/?size=100&id=8808&format=png&color=162456");
-}
-.discord {
-  background-image: url("https://img.icons8.com/?size=100&id=30888&format=png&color=162456");
-}
-.navigate,
+
 .contact-info {
-  @apply w-full my-5 mx-5 sm:ml-10 sm:mr-5;
+  @apply w-fit my-3 sm:my-3 mx-3 md:ml-6  ;
 }
 .navhead,
 .contact-head {
@@ -57,7 +48,9 @@
   text-sm flex flex-wrap 
   justify-between 
   gap-2 w-full 
-  max-w-full;
+  max-w-full 
+  px-2 py-1 
+  text-center sm:text-left;
 }
 .rights {
   @apply 
@@ -66,4 +59,8 @@
 .build {
   @apply 
   pr-4;
+}
+.address {
+  @apply 
+  text-2xl;
 }
