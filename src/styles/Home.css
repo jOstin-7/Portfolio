@@ -1,0 +1,91 @@
+@reference "tailwindcss";
+.Home_BG_color,
+.Home_BG_color-dark {
+  @apply 
+  transition-opacity 
+  ease-in-out 
+  duration-400 
+  absolute 
+  inset-0 z-1;
+}
+.Home_BG_color {
+  @apply 
+  bg-blue-50/80 
+  shadow-[inset_0_-100px_200px_-100px_rgba(255,255,255,1)];
+}
+.Home_BG_color-dark {
+  @apply 
+  bg-gray-700/90 
+  shadow-[inset_0_-200px_200px_-200px_rgba(30,41,57,1)];
+}
+.Text_Body {
+  @apply 
+  relative 
+  z-2 flex 
+  flex-col 
+  m-auto 
+  h-full 
+  w-full 
+  px-4 pt-24 pb-16 
+  md:pt-6 md:pb-8 md:px-8 items-center justify-center;
+}
+.greet {
+  @apply 
+  w-fit 
+  py-1 md:py-2 
+  text-3xl 
+  sm:text-5xl 
+  md:text-6xl 
+  lg:text-7xl 
+  font-bold 
+  text-center
+  md:text-left;
+}
+.pos {
+  @apply 
+  py-1 md:py-2 
+  font-semibold 
+  text-lg 
+  sm:text-2xl 
+  md:text-3xl 
+  lg:text-4xl 
+  text-center;
+}
+.desc {
+  @apply
+  w-full sm:w-3/4 lg:w-1/2 
+  py-1 
+  text-sm sm:text-base 
+  md:text-xl 
+  text-center;
+}
+.CTA {
+  @apply 
+  flex flex-wrap 
+  mt-6 min-h-20 w-fit 
+  justify-center 
+  items-center gap-y-3;
+}
+.CTA-Button {
+  @apply 
+  px-4 py-2 
+  mx-2 sm:mr-5 sm:ml-0 
+  rounded-3xl
+  md:rounded-4xl 
+  text-lg sm:text-2xl md:text-3xl lg:text-4xl 
+  font-bold
+  shadow-md shadow-blue-700 
+  hover:shadow-lg hover:shadow-blue-950 hover:-translate-y-1.5 hover:bg-blue-700 
+  transition-[translate,background-color,color,box-shadow] ease-in-out duration-400 cursor-pointer;
+}
+.building {
+  @apply 
+  absolute 
+  bottom-0 
+  left-1/2 
+  -translate-x-1/2 
+  w-full 
+  px-4 pb-2 
+  text-center 
+  text-xs sm:text-sm md:text-xl;
+}

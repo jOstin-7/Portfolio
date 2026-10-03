@@ -1,0 +1,90 @@
+@reference "tailwindcss";
+.contact-container {
+  @apply 
+  w-[96%] md:w-[70%] 
+  h-auto 
+  flex flex-col 
+  md:flex-row 
+  m-auto mb-5 
+  justify-center 
+  items-center 
+  rounded-xl 
+  shadow-xl 
+  shadow-black/20;
+  background-color: var(--contact-bg, #e6ecff);
+}
+.worktogether {
+  @apply 
+  w-full md:w-50/100 h-full 
+  flex flex-col 
+  justify-center 
+  text-center 
+  items-center
+  p-5 
+  m-0 md:m-8 md:ml-5 md:mr-5 
+  md:pl-0 
+  gap-2 
+  border-b-2 md:border-b-0 md:border-r-2
+  border-blue-950 
+  text-4xl lg:text-7xl 
+  font-bold;
+}
+.idea-container {
+  @apply 
+  flex 
+  h-fit
+  flex-col md:flex-row 
+  justify-center md:justify-between 
+  items-center 
+  w-fit 
+  md:w-auto pl-20
+  pr-20;
+}
+.contact-text {
+  @apply 
+  flex flex-col 
+  w-fit  h-fit 
+  justify-center 
+  items-center md:items-start
+  md:pl-10
+  text-base 
+  sm:text-xl 
+  px-0
+  rounded-xl
+  p-2
+  shadow-lg shadow-gray-800/30
+}
+.idea {
+  @apply flex 
+  gap-2 
+  
+  font-semibold
+  text-lg sm:text-xl
+  mb-2
+}
+.email {
+  @apply 
+  flex 
+  gap-2 
+  text-lg 
+  sm:text-xl 
+  break-all;
+}
+.contact-button {
+  @apply 
+  w-fit h-fit flex flex-row 
+  justify-center 
+  items-center 
+  px-8 py-2 
+  bg-blue-600
+  rounded-xl
+  text-4xl 
+  sm:text-3xl 
+  md:text-4xl 
+  lg:text-4xl 
+  cursor-pointer 
+  text-white 
+  gap-2 
+  transition-[translate,background-color,box-shadow] ease-in-out duration-400
+  shadow-lg shadow-blue-600/50 hover:-translate-y-2 hover:bg-blue-950 hover:shadow-2xl hover:shadow-blue-950/90;
+}

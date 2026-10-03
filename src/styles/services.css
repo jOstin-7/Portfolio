@@ -1,0 +1,57 @@
+@reference "tailwindcss";
+.services_body {
+  @apply h-fit w-full;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 1600px;
+}
+.up_container,
+.low_container {
+  @apply flex flex-col lg:flex-row;
+}
+.service_container {
+  @apply p-4 sm:p-5
+  w-auto lg:w-1/2
+  h-auto
+  m-2 sm:m-3 lg:m-5
+  rounded-3xl md:rounded-4xl
+  border-2
+  hover:shadow-2xl
+  transition-[background-color,border-color,box-shadow] ease-in-out duration-400 hover:shadow-gray-900/90
+  shadow-xl;
+}
+.items_container {
+  @apply flex-col;
+}
+.services_container {
+  @apply flex flex-col md:flex-row;
+}
+.title_container {
+  @apply flex flex-col sm:flex-row gap-3 sm:gap-0;
+}
+.title_header_container {
+  @apply sm:ml-5 flex flex-col;
+}
+.icon {
+  @apply h-14 w-14 sm:h-20 sm:w-20 shrink-0
+  p-3 sm:p-4
+  text-white rounded-2xl bg-blue-600;
+}
+.title {
+  @apply font-bold text-2xl sm:text-3xl;
+}
+.subtitle {
+  @apply text-base sm:text-xl font-semibold;
+}
+.service_title {
+  @apply font-bold text-base sm:text-lg border-b-2 border-blue-600 mb-2;
+}
+.service {
+  @apply flex flex-col;
+}
+.service_text {
+  @apply my-1;
+}
+.left_container,
+.right_container {
+  @apply flex flex-col w-full md:w-1/2 p-2 sm:p-5 md:px-4 xl:px-8 text-base sm:text-lg;
+}
