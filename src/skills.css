@@ -1,0 +1,35 @@
+@reference "tailwindcss";
+.skills_body {
+  @apply h-fit w-full;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
+.skills {
+  @apply h-full w-full justify-center items-center m-auto;
+}
+.upper_container,
+.lowercontainer {
+  @apply flex flex-col lg:flex-row justify-center items-stretch;
+}
+.skill_container {
+  @apply w-full lg:w-fit lg:flex-1 h-auto
+  my-3 lg:m-3 p-3
+  items-center text-center justify-center
+  border-1 border-gray-300
+  rounded-3xl md:rounded-4xl
+  shadow-lg shadow-gray-600/80
+  transition-[background-color,box-shadow] ease-in-out duration-400;
+}
+.skilltitle {
+  @apply text-2xl sm:text-3xl md:text-4xl font-bold p-2;
+}
+.skill_list {
+  @apply flex flex-wrap justify-center items-center;
+}
+.skill {
+  @apply p-1 px-3 m-1 text-base sm:text-xl rounded-4xl font-bold shadow-lg
+  transition-[background-color] ease-in-out duration-400;
+}
+.skill_text {
+  @apply w-full max-w-md m-auto p-3 text-base sm:text-lg;
+}

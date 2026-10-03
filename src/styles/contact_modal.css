@@ -1,0 +1,46 @@
+@reference "tailwindcss";
+.modal_body {
+  @apply relative w-full max-h-[90dvh] overflow-y-auto rounded-xl shadow-xl outline-none transition-[background-color] duration-200 ease-in-out;
+  background-color: var(--modal-bg, #fff);
+}
+.head {
+  @apply flex items-center justify-between border-b border-neutral-200 px-4 sm:px-6 py-4 dark:border-neutral-800;
+}
+.exitbttn {
+  @apply ml-1 mt-1 rounded-md p-1.5 text-neutral-400 transition-colors hover:bg-blue-950 hover:text-blue-100 ease-in-out duration-400;
+}
+.title {
+  @apply text-lg sm:text-xl font-semibold;
+}
+.sub_title {
+  @apply text-sm;
+}
+.name-gap {
+  @apply flex 
+  flex-col 
+  w-full sm:w-3/4 pr-8;
+}
+.modal-inside {
+  @apply 
+  flex flex-col;
+}
+.modal_input,
+.modal_inputarea {
+  @apply 
+  h-10 w-full sm:w-9/10 
+  text-base 
+  border-2 
+  border-gray-500 
+  justify-center 
+  m-auto 
+  p-1 pl-3 
+  rounded-3xl;
+}
+.modal_inputarea {
+  @apply h-28 sm:h-22;
+}
+.modal_inner_body {
+  @apply 
+  px-4 
+  sm:px-6 py-4;
+}
