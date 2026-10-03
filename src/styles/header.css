@@ -1,76 +1,82 @@
-@import "tailwindcss";
-/*Header*/
+@reference "tailwindcss";
 .header {
-  @apply h-10 w-dvw
-  fixed
-  top-3 /*position*/
-  flex;
-}
-/*Name*/
-.name {
-  @apply 
+  @apply h-10 w-full 
+  fixed 
+  z-20 
   flex 
-  absolute
+  items-center 
+  gap-2 
+  mt-2.5 
+  px-3 
+  lg:px-0;
+}
+.name {
+  @apply hidden 
+  lg:flex flex-row 
+  absolute 
   text-center 
   font-bold 
   text-3xl 
-  left-10 
+  left-10;
 }
-
-/*end of name*/
 .navbar {
-  @apply h-full w-3/6 
-  relative 
-   m-auto
-  rounded-4xl 
-  shadow-2xl 
-  flex 
-  items-center
-  px-2
-  font-bold
-  text-white;
-  background-color: #02187b
+  @apply h-full 
+  flex-1 
+  min-w-0 
+  lg:flex-none lg:w-3/6 lg:m-auto 
+  relative rounded-4xl shadow-2xl
+  flex items-center 
+  px-2 font-bold 
+  text-white overflow-x-auto
+  border-1 border-[#02187b]
+  ease-in-out duration-400;
+  ;
+  
+  scrollbar-width: none;
 }
-/*Navbar Buttons*/
 .button {
-  @apply h-3/4 w-1/4
-  relative 
+  @apply h-3/4 
+  flex-1
+  min-w-fit 
+  px-1 md:px-3 
+  text-xs 
+  sm:text-sm 
+  md:text-base 
+  relative
   text-center 
-  flex
-  justify-center
-  items-center
-  rounded-4xl 
+  flex justify-center 
+  items-center rounded-4xl;
 }
 .button:hover {
-  @apply text-blue-200;
+  @apply 
+  text-blue-200;
 }
-
 .button.active {
-  @apply text-white font-medium ease-in-out duration-200;
-  background-color: #164de5;
-}
-
-/* LIGHT MODE BUTTON */
-.button-mode {
-  @apply h-10 w-10
-    absolute
-    flex
-    rounded-4xl
-    overflow-hidden
-    left-9/10
-    border-1
-    ;
-    background-color: #02187b;
-    border-color: #02187b
-}
-
-.sun {
-  @apply left-5/4 top-5/4
+  @apply 
+  text-white 
+  font-medium 
+  transition-colors ease-in-out duration-200
+  bg-blue-700/80;
   ;
 }
-
-/* MOON - starts below the button */
+.button-mode {
+  @apply 
+  h-10 w-10 
+  shrink-0 
+  relative 
+  lg:absolute lg:left-9/10 
+  flex 
+  rounded-4xl 
+  overflow-hidden 
+  border-1
+  bg-blue-900/80;
+  border-color: #02187b;
+}
+.sun {
+  @apply 
+  left-5/4 top-5/4;
+}
 .moon {
-  @apply left-1/4 top-1/4
-  text-sm;
+  @apply 
+  left-1/4 top-1/4 text-sm;
 }
