@@ -6,7 +6,7 @@ import Home from "./Home.jsx";
 import About from "./About.jsx";
 import Skills from "./skill.jsx";
 import Services from "./services.jsx";
-import Projects from "./Projects.jsx";
+import Projects from "./projects.jsx";
 import Certificates from "./Certificates.jsx";
 
 /*functions */
